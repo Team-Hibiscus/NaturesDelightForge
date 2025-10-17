@@ -11,7 +11,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.block.PieBlock;
 
-import javax.swing.text.html.BlockView;
 
 public class ManakishBlock extends PieBlock {
    public ManakishBlock(Properties properties) {

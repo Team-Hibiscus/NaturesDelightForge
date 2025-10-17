@@ -17,7 +17,7 @@ import vectorwing.farmersdelight.common.block.RichSoilBlock;
 
 @Mixin(RichSoilBlock.class)
 public class RichSoilBlockMixin {
-   @Inject(method = "randomTick", at = @At(value = "INVOKE", target = "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;get()Ljava/lang/Object;", ordinal = 0), cancellable = true)
+   @Inject(method = "randomTick", at = @At(value = "INVOKE", target = "Lnet/neoforged/neoforge/common/ModConfigSpec$DoubleValue;get()Ljava/lang/Object;", ordinal = 0), cancellable = true)
    private void onLanding(BlockState state, ServerLevel level, BlockPos pos, RandomSource rand, CallbackInfo ci, @Local Block aboveBlock) {
          if (aboveBlock == NSBlocks.SHIITAKE_MUSHROOM.get()) {
             level.setBlockAndUpdate(pos.above(), NaturesDelightBlocksAndItems.SHIITAKE_MUSHROOM_COLONY_BLOCK.get().defaultBlockState());

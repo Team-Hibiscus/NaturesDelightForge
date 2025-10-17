@@ -1,0 +1,21 @@
+{
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "natures_spirit:joshua_bundle"
+      }
+    ],
+    "tool": {
+      "type": "farmersdelight:item_ability",
+    "action": "axe_dig"
+    },
+    "result": [
+      {
+        "item": {"id":"natures_spirit:stripped_joshua_bundle"}
+      },
+      {
+        "item": {"id":"farmersdelight:tree_bark"}
+      }
+    ],
+    "sound": {"sound_id": "minecraft:item.axe.strip"}
+  }

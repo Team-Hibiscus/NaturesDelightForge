@@ -10,7 +10,7 @@ import net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement;
 import net.minecraft.world.level.levelgen.structure.pools.StructurePoolElement;
 import net.minecraft.world.level.levelgen.structure.pools.StructureTemplatePool;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList;
-import net.minecraftforge.event.server.ServerAboutToStartEvent;
+import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
 import vectorwing.farmersdelight.common.Configuration;
 
 import java.util.ArrayList;
@@ -27,16 +27,16 @@ public class NaturesDelightVillageStructures {
       Registry<StructureTemplatePool> templatePools = (Registry) event.getServer().registryAccess().registry(Registries.TEMPLATE_POOL).get();
       Registry<StructureProcessorList> processorLists = (Registry) event.getServer().registryAccess().registry(Registries.PROCESSOR_LIST).get();
 
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", new ResourceLocation("natures_spirit", "lime_kaolin"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", new ResourceLocation("natures_spirit", "red_kaolin"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", new ResourceLocation("natures_spirit", "cyan_kaolin"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", new ResourceLocation("natures_spirit", "light_blue_kaolin"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", new ResourceLocation("natures_spirit", "crack_10_percent"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", new ResourceLocation("natures_spirit", "pink_kaolin"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", new ResourceLocation("natures_spirit", "yellow_kaolin"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/wisteria/houses"), NaturesDelight.MOD_ID + ":village/houses/wisteria_compost_pile", new ResourceLocation("mossify_10_percent"), 3);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/coconut/houses"), NaturesDelight.MOD_ID + ":village/houses/coconut_compost_pile", new ResourceLocation("empty"),4);
-      addBuildingToPool(templatePools, processorLists, new ResourceLocation("natures_spirit:village/adobe/adobe_houses_layer_1_back"), NaturesDelight.MOD_ID + ":village/houses/adobe_compost_pile", new ResourceLocation("natures_spirit", "fix_button"),3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "lime_kaolin"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "red_kaolin"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "cyan_kaolin"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "light_blue_kaolin"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "crack_10_percent"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "pink_kaolin"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/cypress/houses"), NaturesDelight.MOD_ID + ":village/houses/cypress_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "yellow_kaolin"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/wisteria/houses"), NaturesDelight.MOD_ID + ":village/houses/wisteria_compost_pile", ResourceLocation.parse("mossify_10_percent"), 3);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/coconut/houses"), NaturesDelight.MOD_ID + ":village/houses/coconut_compost_pile", ResourceLocation.parse("empty"),4);
+      addBuildingToPool(templatePools, processorLists, ResourceLocation.parse("natures_spirit:village/adobe/adobe_houses_layer_1_back"), NaturesDelight.MOD_ID + ":village/houses/adobe_compost_pile", ResourceLocation.fromNamespaceAndPath("natures_spirit", "fix_button"),3);
    }
 
    public static void addBuildingToPool(Registry<StructureTemplatePool> templatePoolRegistry, Registry<StructureProcessorList> processorListRegistry, ResourceLocation poolRL, String nbtPieceRL, ResourceLocation processor, int weight) {

@@ -3,7 +3,7 @@
   "conditions":
   [
     {
-      "condition": "porting_lib:loot_table_id",
+      "condition": "neoforge:loot_table_id",
       "loot_table_id": "natures_spirit:chests/village/village_adobe_house"
     }
   ],
