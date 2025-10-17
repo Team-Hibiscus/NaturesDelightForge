@@ -1,4 +1,9 @@
 {
+  "conditions": [
+    {
+      "type": "farmersdelight:vanilla_crates_enabled"
+    }
+  ],
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [

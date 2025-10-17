@@ -7,7 +7,7 @@
   ],
   "tool": {
     "type": "farmersdelight:tool_action",
-    "action": "axe_dig"
+    "action": "axe_strip"
   },
   "result": [
     {
