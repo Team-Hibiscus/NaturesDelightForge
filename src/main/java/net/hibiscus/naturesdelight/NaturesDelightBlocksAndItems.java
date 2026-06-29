@@ -44,12 +44,12 @@ public class NaturesDelightBlocksAndItems {
     public static final RegistryObject<Item> MANAKISH_SLICE_ITEM = registerItem("manakish_slice", () -> new Item(ModItems.foodItem(MANAKISH_SLICE)));
     public static final FoodProperties ALFREDO_PASTA = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.8f).effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), FoodValues.SHORT_DURATION, 0), 1.0F).build();
     public static final RegistryObject<Item> ALFREDO_PASTA_ITEM = registerItem("alfredo_pasta", () -> new Item(ModItems.bowlFoodItem(ALFREDO_PASTA)));
-    public static final FoodProperties TURNIP_TAGINE = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.70f).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), FoodValues.MEDIUM_DURATION, 0), 1.0F).build();
+    public static final FoodProperties TURNIP_TAGINE = (new FoodProperties.Builder()).nutrition(12).saturationMod(0.70f).effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), FoodValues.MEDIUM_DURATION, 0), 1.0F).build();
     public static final RegistryObject<Item> TURNIP_TAGINE_ITEM = registerItem("turnip_tagine", () -> new Item(ModItems.bowlFoodItem(TURNIP_TAGINE)));
     public static final RegistryObject<Item> COCONUT_SAUCE_ITEM = registerItem("coconut_sauce", () -> new Item(ModItems.bowlFoodItem(FoodValues.TOMATO_SAUCE)));
     public static final FoodProperties SWEET_AND_SAVORY_SAUTE = (new FoodProperties.Builder()).nutrition(14).saturationMod(0.80f).effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), FoodValues.LONG_DURATION, 0), 1.0F).build();
     public static final RegistryObject<Item> SWEET_AND_SAVORY_SAUTE_ITEM = registerItem("sweet_and_savory_saute", () -> new Item(ModItems.bowlFoodItem(SWEET_AND_SAVORY_SAUTE)));
-    public static final FoodProperties FAFARU = (new FoodProperties.Builder()).nutrition(14).saturationMod(0.8f).effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), FoodValues.LONG_DURATION, 0), 1.0F).build();
+    public static final FoodProperties FAFARU = (new FoodProperties.Builder()).nutrition(14).saturationMod(0.8f).effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), FoodValues.LONG_DURATION, 0), 1.0F).build();
     public static final RegistryObject<Item> FAFARU_ITEM = registerItem("fafaru", () -> new Item(ModItems.bowlFoodItem(FAFARU)));
     public static final FoodProperties COCONUT_PANCAKES = (new FoodProperties.Builder()).nutrition(10).saturationMod(0.6f).effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), FoodValues.SHORT_DURATION, 0), 1.0F).build();
     public static final RegistryObject<Item> COCONUT_PANCAKES_ITEM = registerItem("coconut_pancakes", () -> new Item(ModItems.bowlFoodItem(COCONUT_PANCAKES)));

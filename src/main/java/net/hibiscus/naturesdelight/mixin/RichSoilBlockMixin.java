@@ -12,17 +12,18 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import vectorwing.farmersdelight.common.block.RichSoilBlock;
 
 
-@Mixin(RichSoilBlock.class)
+@Mixin(value = RichSoilBlock.class, remap = false)
 public class RichSoilBlockMixin {
-   @Inject(method = "randomTick", at = @At(value = "INVOKE", target = "Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;get()Ljava/lang/Object;", ordinal = 0), cancellable = true)
-   private void onLanding(BlockState state, ServerLevel level, BlockPos pos, RandomSource rand, CallbackInfo ci, @Local Block aboveBlock) {
-         if (aboveBlock == NSBlocks.SHIITAKE_MUSHROOM.get()) {
-            level.setBlockAndUpdate(pos.above(), NaturesDelightBlocksAndItems.SHIITAKE_MUSHROOM_COLONY_BLOCK.get().defaultBlockState());
-            ci.cancel();
-         }
-   }
+    @Inject(method = "convertMushroomToColony", at = @At(value = "HEAD"), cancellable = true)
+    private void convertMushroomToColony(BlockState targetState, BlockPos targetPos, ServerLevel level, CallbackInfoReturnable<Boolean> cir) {
+        if (targetState.is(NSBlocks.SHIITAKE_MUSHROOM.get())) {
+            level.setBlockAndUpdate(targetPos, NaturesDelightBlocksAndItems.SHIITAKE_MUSHROOM_COLONY_BLOCK.get().defaultBlockState());
+            cir.setReturnValue(true);
+        }
+    }
 
 }
