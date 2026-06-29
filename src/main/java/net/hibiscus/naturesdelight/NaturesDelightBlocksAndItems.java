@@ -18,7 +18,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import vectorwing.farmersdelight.common.FoodValues;
 import vectorwing.farmersdelight.common.block.CabinetBlock;
 import vectorwing.farmersdelight.common.block.MushroomColonyBlock;
-import vectorwing.farmersdelight.common.item.FuelBlockItem;
 import vectorwing.farmersdelight.common.item.MushroomColonyItem;
 import vectorwing.farmersdelight.common.registry.ModEffects;
 import vectorwing.farmersdelight.common.registry.ModItems;
@@ -75,23 +74,23 @@ public class NaturesDelightBlocksAndItems {
     public static final DeferredBlock<CabinetBlock> MAHOGANY_CABINET = registerBlock("mahogany_cabinet", () -> new CabinetBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BARREL)));
     public static final DeferredBlock<CabinetBlock> SAXAUL_CABINET = registerBlock("saxaul_cabinet", () -> new CabinetBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BARREL)));
 
-    public static final DeferredItem<FuelBlockItem> REDWOOD_CABINET_ITEM = registerItem("redwood_cabinet", () -> new FuelBlockItem(REDWOOD_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> SUGI_CABINET_ITEM = registerItem("sugi_cabinet", () -> new FuelBlockItem(SUGI_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> WISTERIA_CABINET_ITEM = registerItem("wisteria_cabinet", () -> new FuelBlockItem(WISTERIA_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> FIR_CABINET_ITEM = registerItem("fir_cabinet", () -> new FuelBlockItem(FIR_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> WILLOW_CABINET_ITEM = registerItem("willow_cabinet", () -> new FuelBlockItem(WILLOW_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> ASPEN_CABINET_ITEM = registerItem("aspen_cabinet", () -> new FuelBlockItem(ASPEN_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> MAPLE_CABINET_ITEM = registerItem("maple_cabinet", () -> new FuelBlockItem(MAPLE_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> CYPRESS_CABINET_ITEM = registerItem("cypress_cabinet", () -> new FuelBlockItem(CYPRESS_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> OLIVE_CABINET_ITEM = registerItem("olive_cabinet", () -> new FuelBlockItem(OLIVE_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> JOSHUA_CABINET_ITEM = registerItem("joshua_cabinet", () -> new FuelBlockItem(JOSHUA_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> GHAF_CABINET_ITEM = registerItem("ghaf_cabinet", () -> new FuelBlockItem(GHAF_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> PALO_VERDE_CABINET_ITEM = registerItem("palo_verde_cabinet", () -> new FuelBlockItem(PALO_VERDE_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> COCONUT_CABINET_ITEM = registerItem("coconut_cabinet", () -> new FuelBlockItem(COCONUT_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> CEDAR_CABINET_ITEM = registerItem("cedar_cabinet", () -> new FuelBlockItem(CEDAR_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> LARCH_CABINET_ITEM = registerItem("larch_cabinet", () -> new FuelBlockItem(LARCH_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> MAHOGANY_CABINET_ITEM = registerItem("mahogany_cabinet", () -> new FuelBlockItem(MAHOGANY_CABINET.get(), ModItems.basicItem(), 300));
-    public static final DeferredItem<FuelBlockItem> SAXAUL_CABINET_ITEM = registerItem("saxaul_cabinet", () -> new FuelBlockItem(SAXAUL_CABINET.get(), ModItems.basicItem(), 300));
+    public static final DeferredItem<BlockItem> REDWOOD_CABINET_ITEM = registerItem("redwood_cabinet", () -> new BlockItem(REDWOOD_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> SUGI_CABINET_ITEM = registerItem("sugi_cabinet", () -> new BlockItem(SUGI_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> WISTERIA_CABINET_ITEM = registerItem("wisteria_cabinet", () -> new BlockItem(WISTERIA_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> FIR_CABINET_ITEM = registerItem("fir_cabinet", () -> new BlockItem(FIR_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> WILLOW_CABINET_ITEM = registerItem("willow_cabinet", () -> new BlockItem(WILLOW_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> ASPEN_CABINET_ITEM = registerItem("aspen_cabinet", () -> new BlockItem(ASPEN_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> MAPLE_CABINET_ITEM = registerItem("maple_cabinet", () -> new BlockItem(MAPLE_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> CYPRESS_CABINET_ITEM = registerItem("cypress_cabinet", () -> new BlockItem(CYPRESS_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> OLIVE_CABINET_ITEM = registerItem("olive_cabinet", () -> new BlockItem(OLIVE_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> JOSHUA_CABINET_ITEM = registerItem("joshua_cabinet", () -> new BlockItem(JOSHUA_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> GHAF_CABINET_ITEM = registerItem("ghaf_cabinet", () -> new BlockItem(GHAF_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> PALO_VERDE_CABINET_ITEM = registerItem("palo_verde_cabinet", () -> new BlockItem(PALO_VERDE_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> COCONUT_CABINET_ITEM = registerItem("coconut_cabinet", () -> new BlockItem(COCONUT_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> CEDAR_CABINET_ITEM = registerItem("cedar_cabinet", () -> new BlockItem(CEDAR_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> LARCH_CABINET_ITEM = registerItem("larch_cabinet", () -> new BlockItem(LARCH_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> MAHOGANY_CABINET_ITEM = registerItem("mahogany_cabinet", () -> new BlockItem(MAHOGANY_CABINET.get(), ModItems.basicItem()));
+    public static final DeferredItem<BlockItem> SAXAUL_CABINET_ITEM = registerItem("saxaul_cabinet", () -> new BlockItem(SAXAUL_CABINET.get(), ModItems.basicItem()));
 
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

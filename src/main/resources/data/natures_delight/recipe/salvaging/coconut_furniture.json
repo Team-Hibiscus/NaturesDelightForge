@@ -1,0 +1,58 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "natures_spirit:coconut_door"
+        },
+        {
+          "item": "natures_spirit:coconut_trapdoor"
+        },
+        {
+          "item": "natures_spirit:coconut_sign"
+        },
+        {
+          "item": "natures_spirit:coconut_hanging_sign"
+        },
+        {
+          "item": "natures_spirit:coconut_fence"
+        },
+        {
+          "item": "natures_spirit:coconut_fence_gate"
+        },
+        {
+          "item": "natures_spirit:coconut_pressure_plate"
+        },
+        {
+          "item": "natures_spirit:coconut_button"
+        },
+        {
+          "item": "natures_spirit:coconut_boat"
+        },
+        {
+          "item": "farmersdelight:coconut_cabinet"
+        }
+      ]
+    }
+  ],
+  "result": [
+    {
+      "chance": 0.75,
+      "item": {
+        "count": 1,
+        "id": "natures_spirit:coconut_planks"
+      }
+    }
+  ],
+  "tool": [
+    {
+      "type": "farmersdelight:item_ability",
+      "action": "axe_dig"
+    },
+    {
+      "tag": "minecraft:axes"
+    }
+  ]
+}
